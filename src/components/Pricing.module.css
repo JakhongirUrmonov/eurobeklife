@@ -1,0 +1,222 @@
+.pricing {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.currencyToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-color: var(--color-surface);
+  padding: 4px;
+  border-radius: 99px;
+  border: 1px solid var(--color-border);
+}
+
+.toggleBtn {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 99px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-muted);
+  transition: all var(--transition-fast);
+}
+
+.toggleBtnActive {
+  background-color: var(--color-accent);
+  color: #000;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin: var(--spacing-xl) 0 var(--spacing-lg);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.featuredCard {
+  border-color: var(--color-accent);
+  position: relative;
+  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.15);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-accent);
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cardName {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cardPrice {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  font-size: 1.25rem;
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+.cardSub {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-lg);
+  min-height: 2.5rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  flex-grow: 1;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.check {
+  color: var(--color-accent);
+}
+
+.tableWrapper {
+  margin-top: var(--spacing-2xl);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  background-color: #151515;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: 1.125rem;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table td {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.table td:last-child {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-align: right;
+}
+
+.ctaBox {
+  margin-top: var(--spacing-2xl);
+  background: linear-gradient(135deg, #151515 0%, var(--color-surface) 100%);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.ctaDesc {
+  color: var(--color-muted);
+  max-width: 600px;
+}
