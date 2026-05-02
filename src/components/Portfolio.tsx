@@ -17,13 +17,16 @@ interface VideoItem {
 }
 
 const portfolioData: VideoItem[] = [
-  { id: "01", titleEn: "Apartment · Prague 1", category: "real_estate", titleKey: "Apartment · Prague 1", videoUrl: "https://www.youtube.com/embed/4IhnAjmLZyg", thumbnail: "https://img.youtube.com/vi/4IhnAjmLZyg/maxresdefault.jpg" },
-  { id: "02", titleEn: "Apartment · Prague 2", category: "real_estate", titleKey: "Apartment · Prague 2", videoUrl: "https://www.youtube.com/embed/pkceZMM2MY4", thumbnail: "https://img.youtube.com/vi/pkceZMM2MY4/maxresdefault.jpg" },
-  { id: "03", titleEn: "Apartment · Prague 3", category: "real_estate", titleKey: "Apartment · Prague 3", videoUrl: "https://www.youtube.com/embed/pCONFK7fufo", thumbnail: "https://img.youtube.com/vi/pCONFK7fufo/maxresdefault.jpg" },
-  { id: "04", titleEn: "Apartment · Prague 4", category: "real_estate", titleKey: "Apartment · Prague 4", videoUrl: "https://www.youtube.com/embed/O5RZpdPEGis", thumbnail: "https://img.youtube.com/vi/O5RZpdPEGis/maxresdefault.jpg" },
-  { id: "05", titleEn: "Apartment · Prague 5", category: "real_estate", titleKey: "Apartment · Prague 5", videoUrl: "https://www.youtube.com/embed/XS9NU8tKxKc", thumbnail: "https://img.youtube.com/vi/XS9NU8tKxKc/maxresdefault.jpg" },
-  { id: "08", titleEn: "DreamFit · Praha", category: "commercial", titleKey: "DreamFit · Praha", videoUrl: "https://www.youtube.com/embed/E0ztVuVV088", thumbnail: "https://img.youtube.com/vi/E0ztVuVV088/maxresdefault.jpg" },
-  { id: "09", titleEn: "GG Barber · Praha", category: "commercial", titleKey: "GG Barber · Praha", videoUrl: "https://www.youtube.com/embed/wkknZzLf1nI", thumbnail: "https://img.youtube.com/vi/wkknZzLf1nI/maxresdefault.jpg" },
+  { id: "01", titleEn: "Apartment · Prague 1", category: "real_estate", titleKey: "Apartment · Prague 1", videoUrl: "https://www.youtube.com/embed/RY-5xUFBwqs", thumbnail: "https://img.youtube.com/vi/RY-5xUFBwqs/maxresdefault.jpg" },
+  { id: "02", titleEn: "Apartment · Prague 2", category: "real_estate", titleKey: "Apartment · Prague 2", videoUrl: "https://www.youtube.com/embed/KCh1vBfFyKc", thumbnail: "https://img.youtube.com/vi/KCh1vBfFyKc/maxresdefault.jpg" },
+  { id: "03", titleEn: "Apartment · Prague 3", category: "real_estate", titleKey: "Apartment · Prague 3", videoUrl: "https://www.youtube.com/embed/xA8fBD5eiRY", thumbnail: "https://img.youtube.com/vi/xA8fBD5eiRY/maxresdefault.jpg" },
+  { id: "04", titleEn: "Apartment · Prague 4", category: "real_estate", titleKey: "Apartment · Prague 4", videoUrl: "https://www.youtube.com/embed/i-PiQYXHmwM", thumbnail: "https://img.youtube.com/vi/i-PiQYXHmwM/maxresdefault.jpg" },
+  { id: "05", titleEn: "Apartment · Prague 5", category: "real_estate", titleKey: "Apartment · Prague 5", videoUrl: "https://www.youtube.com/embed/PSQejDD7U3E", thumbnail: "https://img.youtube.com/vi/PSQejDD7U3E/maxresdefault.jpg" },
+  { id: "06", titleEn: "Apartment · Prague 6", category: "real_estate", titleKey: "Apartment · Prague 6", videoUrl: "https://www.youtube.com/embed/8yCzus2QXOk", thumbnail: "https://img.youtube.com/vi/8yCzus2QXOk/maxresdefault.jpg" },
+  { id: "07", titleEn: "Apartment · Prague 7", category: "real_estate", titleKey: "Apartment · Prague 7", videoUrl: "https://www.youtube.com/embed/yAjNFTRjqjw", thumbnail: "https://img.youtube.com/vi/yAjNFTRjqjw/maxresdefault.jpg" },
+  { id: "08", titleEn: "DreamFit · Praha", category: "commercial", titleKey: "DreamFit · Praha", videoUrl: "https://www.youtube.com/embed/a0Juwrf7Rk0", thumbnail: "https://img.youtube.com/vi/a0Juwrf7Rk0/maxresdefault.jpg" },
+  { id: "09", titleEn: "GG Barber · Praha", category: "commercial", titleKey: "GG Barber · Praha", videoUrl: "https://www.youtube.com/embed/i6bBTiRBzm0", thumbnail: "https://img.youtube.com/vi/i6bBTiRBzm0/maxresdefault.jpg" },
+  { id: "10", titleEn: "Football Match", category: "events", titleKey: "Football Match", videoUrl: "https://www.youtube.com/embed/phg1i3Wwz6I", thumbnail: "https://img.youtube.com/vi/phg1i3Wwz6I/maxresdefault.jpg" },
 ];
 
 export default function Portfolio() {
@@ -79,7 +82,11 @@ export default function Portfolio() {
               <div className={styles.cardInfo}>
                 <span className={styles.cardTitle}>{item.titleEn}</span>
                 <span className={styles.cardTag}>
-                  {item.category === "real_estate" ? getTranslation("filterRealEstate", lang) : getTranslation("filterCommercial", lang)}
+                  {item.category === "real_estate" 
+                    ? getTranslation("filterRealEstate", lang) 
+                    : item.category === "commercial"
+                      ? getTranslation("filterCommercial", lang)
+                      : getTranslation("filterEvents", lang)}
                 </span>
               </div>
             </div>
