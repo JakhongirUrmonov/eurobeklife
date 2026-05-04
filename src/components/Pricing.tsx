@@ -47,9 +47,9 @@ export default function Pricing() {
               {currency === "CZK" ? "1 500 Kč" : "€60"}
             </div>
             <p className={styles.cardSub}>
-              {lang === "en" ? "Up to 2 hours on location · 1 location" : 
-               lang === "cs" ? "Až 2 hodiny na místě · 1 lokace" : 
-               "Up to 2 hours on location · 1 location"}
+              {lang === "en" ? "Up to 1 hour on location · 1 location" : 
+               lang === "cs" ? "Až 1 hodiny na místě · 1 lokace" : 
+               "Up to 1 hours on location · 1 location"}
             </p>
             <ul className={styles.list}>
               <li className={styles.listItem}><span className={styles.check}>✓</span> 1 edited clip</li>
