@@ -57,7 +57,7 @@ export default function Pricing() {
 
           {/* Tier 2 */}
           <div className={`${styles.card} ${styles.featuredCard}`}>
-            <div className={styles.featuredBadge}>Featured</div>
+            <div className={styles.featuredBadge}>{getTranslation("featured", lang)}</div>
             <h4 className={styles.cardName}>
               {getTranslation("pricingCinematicEdit", lang)}
             </h4>

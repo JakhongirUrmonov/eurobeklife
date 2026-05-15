@@ -474,6 +474,12 @@ export const t = {
     de: "Alle Rechte vorbehalten.",
     pl: "Wszelkie prawa zastrzeżone.",
   },
+  featured: {
+    en: "Featured",
+    cs: "Vybrané",
+    de: "Empfohlen",
+    pl: "Wyróżnione",
+  },
 };
 
 export const getTranslation = (key: keyof typeof t, lang: Language) => {
