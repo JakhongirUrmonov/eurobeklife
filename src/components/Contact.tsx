@@ -2,6 +2,7 @@
 
 import styles from "./Contact.module.css";
 import { useI18n } from "@/contexts/I18nContext";
+import { getTranslation } from "@/i18n/translations";
 import { InlineWidget } from "react-calendly";
 
 export default function Contact() {
@@ -12,10 +13,7 @@ export default function Contact() {
       <div className={styles.container}>
         <div>
           <h2 className={styles.heading}>
-            {lang === "en" ? "Book a session" : 
-             lang === "cs" ? "Rezervovat termín" : 
-             lang === "de" ? "Termin buchen" : 
-             "Zarezerwuj sesję"}
+            {getTranslation("contactBookSession", lang)}
           </h2>
           
           <div style={{ marginTop: "var(--spacing-lg)", borderRadius: "var(--radius-lg)", overflow: "hidden" }}>
@@ -35,22 +33,16 @@ export default function Contact() {
 
         <div className={styles.info}>
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>Availability</h3>
+            <h3 className={styles.infoTitle}>{getTranslation("contactAvailability", lang)}</h3>
             <p className={styles.infoText}>
-              {lang === "en" ? "Based in Prague · available across Central Europe" : 
-               lang === "cs" ? "Sídlo v Praze · dostupný po celé střední Evropě" : 
-               lang === "de" ? "Ansässig in Prag · verfügbar in ganz Mitteleuropa" : 
-               "Siedziba w Pradze · dostępny w całej Europie Środkowej"}
+              {getTranslation("contactBasedIn", lang)}
               <br />
-              {lang === "en" ? "Response time: within 24 hours" : 
-               lang === "cs" ? "Čas odpovědi: do 24 hodin" : 
-               lang === "de" ? "Reaktionszeit: innerhalb von 24 Stunden" : 
-               "Czas odpowiedzi: do 24 godzin"}
+              {getTranslation("contactResponseTime", lang)}
             </p>
           </div>
 
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>Contact Details</h3>
+            <h3 className={styles.infoTitle}>{getTranslation("contactDetails", lang)}</h3>
             <p className={styles.infoText}>
               <a href="mailto:eurobeklife@gmail.com" className={styles.socialLink}>eurobeklife@gmail.com</a>
             </p>
@@ -62,7 +54,7 @@ export default function Contact() {
           </div>
 
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>Timezone</h3>
+            <h3 className={styles.infoTitle}>{getTranslation("contactTimezone", lang)}</h3>
             <p className={styles.infoText}>CET / CEST (UTC+1 / UTC+2)</p>
           </div>
         </div>

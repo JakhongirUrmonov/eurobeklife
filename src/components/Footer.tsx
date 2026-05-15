@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         
         <div className={styles.column}>
-          <h4 className={styles.heading}>Links</h4>
+          <h4 className={styles.heading}>{getTranslation("footerLinks", lang)}</h4>
           <a href="#about" className={styles.link}>{getTranslation("aboutHeading", lang)}</a>
           <a href="#portfolio" className={styles.link}>{getTranslation("portfolioHeading", lang)}</a>
           <a href="#services" className={styles.link}>{getTranslation("servicesHeading", lang)}</a>
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.column}>
-          <h4 className={styles.heading}>Socials</h4>
+          <h4 className={styles.heading}>{getTranslation("footerSocials", lang)}</h4>
           <div className={styles.socials}>
             <a href="https://www.instagram.com/eurobeklife/" className={styles.link} target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.tiktok.com/@eurobeklife" className={styles.link} target="_blank" rel="noopener noreferrer">TikTok</a>
@@ -39,11 +39,11 @@ export default function Footer() {
       </div>
       
       <div className={styles.bottom}>
-        <p>&copy; {new Date().getFullYear()} EurobekLife. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} EurobekLife. {getTranslation("footerAllRights", lang)}</p>
         <div className={styles.legal}>
-          <a href="#" className={styles.link}>Privacy Policy</a>
+          <a href="#" className={styles.link}>{getTranslation("footerPrivacy", lang)}</a>
           {" | "}
-          <a href="#" className={styles.link}>Terms of Service</a>
+          <a href="#" className={styles.link}>{getTranslation("footerTerms", lang)}</a>
         </div>
       </div>
     </footer>

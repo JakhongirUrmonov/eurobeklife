@@ -27,6 +27,8 @@ const portfolioData: VideoItem[] = [
   { id: "08", titleEn: "DreamFit · Praha", category: "commercial", titleKey: "DreamFit · Praha", videoUrl: "https://www.youtube.com/embed/a0Juwrf7Rk0", thumbnail: "https://img.youtube.com/vi/a0Juwrf7Rk0/maxresdefault.jpg" },
   { id: "09", titleEn: "GG Barber · Praha", category: "commercial", titleKey: "GG Barber · Praha", videoUrl: "https://www.youtube.com/embed/i6bBTiRBzm0", thumbnail: "https://img.youtube.com/vi/i6bBTiRBzm0/maxresdefault.jpg" },
   { id: "10", titleEn: "Football Match", category: "events", titleKey: "Football Match", videoUrl: "https://www.youtube.com/embed/phg1i3Wwz6I", thumbnail: "https://img.youtube.com/vi/phg1i3Wwz6I/maxresdefault.jpg" },
+  { id: "11", titleEn: "Barbershop 1", category: "commercial", titleKey: "Barbershop 1", videoUrl: "https://www.youtube.com/embed/4cTA2xZwBiU", thumbnail: "https://img.youtube.com/vi/4cTA2xZwBiU/maxresdefault.jpg" },
+  { id: "12", titleEn: "Barbershop 2", category: "commercial", titleKey: "Barbershop 2", videoUrl: "https://www.youtube.com/embed/rhUIIq4CKwM", thumbnail: "https://img.youtube.com/vi/rhUIIq4CKwM/maxresdefault.jpg" },
 ];
 
 export default function Portfolio() {
@@ -94,12 +96,9 @@ export default function Portfolio() {
           
           {(filter === "all" || filter === "events") && (
             <a href="#contact" className={styles.placeholderCard}>
-              <h3 className={styles.cardTitle}>Events & sports</h3>
+              <h3 className={styles.cardTitle}>{getTranslation("portfolioEventsSports", lang)}</h3>
               <p style={{ color: "var(--color-muted)", fontSize: "0.875rem", marginTop: "var(--spacing-sm)" }}>
-                {lang === "en" ? "Available for booking — sports, races, concerts, festivals." : 
-                 lang === "cs" ? "Dostupné pro rezervaci — sport, závody, koncerty, festivaly." :
-                 lang === "de" ? "Buchbar für Sport, Rennen, Konzerte, Festivals." :
-                 "Do rezerwacji — sport, wyścigi, koncerty, festiwale."}
+                {getTranslation("portfolioAvailableBooking", lang)}
               </p>
             </a>
           )}
