@@ -30,6 +30,8 @@ const portfolioData: VideoItem[] = [
   { id: "05", titleEn: "Apartment · Prague 5", category: "real_estate", titleKey: "Apartment · Prague 5", videoUrl: "https://www.youtube.com/embed/PSQejDD7U3E", thumbnail: "https://img.youtube.com/vi/PSQejDD7U3E/maxresdefault.jpg" },
   { id: "06", titleEn: "Apartment · Prague 6", category: "real_estate", titleKey: "Apartment · Prague 6", videoUrl: "https://www.youtube.com/embed/8yCzus2QXOk", thumbnail: "https://img.youtube.com/vi/8yCzus2QXOk/maxresdefault.jpg" },
   { id: "07", titleEn: "Apartment · Prague 7", category: "real_estate", titleKey: "Apartment · Prague 7", videoUrl: "https://www.youtube.com/embed/yAjNFTRjqjw", thumbnail: "https://img.youtube.com/vi/yAjNFTRjqjw/maxresdefault.jpg" },
+  { id: "14", titleEn: "Tiny Living Festival", category: "events", titleKey: "Tiny Living Festival", videoUrl: "https://www.youtube.com/embed/8l9RZ7UYL_o", thumbnail: "https://img.youtube.com/vi/8l9RZ7UYL_o/maxresdefault.jpg" },
+  { id: "15", titleEn: "Benesov Football Match", category: "events", titleKey: "Benesov Football Match", videoUrl: "https://www.youtube.com/embed/y2y75haEXDg", thumbnail: "https://img.youtube.com/vi/y2y75haEXDg/maxresdefault.jpg" },
 ];
 
 export default function Portfolio() {
