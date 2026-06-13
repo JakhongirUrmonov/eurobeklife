@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /llms.txt
+
+# Disallow admin or private routes if any exist in the future
+# Disallow: /admin
+# Disallow: /private
+
+Sitemap: https://eurobeklife.com/sitemap.xml

@@ -32,6 +32,7 @@ const portfolioData: VideoItem[] = [
   { id: "07", titleEn: "Apartment · Prague 7", category: "real_estate", titleKey: "Apartment · Prague 7", videoUrl: "https://www.youtube.com/embed/yAjNFTRjqjw", thumbnail: "https://img.youtube.com/vi/yAjNFTRjqjw/maxresdefault.jpg" },
   { id: "14", titleEn: "Tiny Living Festival", category: "events", titleKey: "Tiny Living Festival", videoUrl: "https://www.youtube.com/embed/8l9RZ7UYL_o", thumbnail: "https://img.youtube.com/vi/8l9RZ7UYL_o/maxresdefault.jpg" },
   { id: "15", titleEn: "Benesov Football Match", category: "events", titleKey: "Benesov Football Match", videoUrl: "https://www.youtube.com/embed/y2y75haEXDg", thumbnail: "https://img.youtube.com/vi/y2y75haEXDg/maxresdefault.jpg" },
+  { id: "16", titleEn: "Vivasports Marathon", category: "events", titleKey: "Vivasports Marathon", videoUrl: "https://www.youtube.com/embed/qlH0cBYApFA", thumbnail: "https://img.youtube.com/vi/qlH0cBYApFA/maxresdefault.jpg" },
 ];
 
 export default function Portfolio() {
