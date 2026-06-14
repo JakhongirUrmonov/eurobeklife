@@ -40,8 +40,8 @@ export default function Pricing() {
               {getTranslation("pricingBasicShot", lang)}
             </h4>
             <div className={styles.cardPrice}>
-              <span className={styles.oldPrice}>{currency === "CZK" ? "3 000 Kč" : "€120"}</span>
-              {currency === "CZK" ? "1 500 Kč" : "€60"}
+              <span className={styles.oldPrice}>{currency === "CZK" ? "5 000 Kč" : "€200"}</span>
+              {currency === "CZK" ? "2 500 Kč" : "€100"}
             </div>
             <p className={styles.cardSub}>
               {getTranslation("pricingBasicDesc", lang)}
@@ -62,8 +62,8 @@ export default function Pricing() {
               {getTranslation("pricingCinematicEdit", lang)}
             </h4>
             <div className={styles.cardPrice}>
-              <span className={styles.oldPrice}>{currency === "CZK" ? "6 000 Kč" : "€240"}</span>
-              {currency === "CZK" ? "3 000 Kč" : "€120"}
+              <span className={styles.oldPrice}>{currency === "CZK" ? "10 000 Kč" : "€400"}</span>
+              {currency === "CZK" ? "5 000 Kč" : "€200"}
             </div>
             <p className={styles.cardSub}>
               {getTranslation("pricingCinematicDesc", lang)}
@@ -85,8 +85,8 @@ export default function Pricing() {
               {getTranslation("pricingPremium", lang)}
             </h4>
             <div className={styles.cardPrice}>
-              <span className={styles.oldPrice}>{currency === "CZK" ? "12 000 Kč" : "€480"}</span>
-              {currency === "CZK" ? "6 000 Kč" : "€240"}
+              <span className={styles.oldPrice}>{currency === "CZK" ? "20 000 Kč" : "€800"}</span>
+              {currency === "CZK" ? "10 000 Kč" : "€400"}
             </div>
             <p className={styles.cardSub}>
               {getTranslation("pricingPremiumDesc", lang)}
@@ -114,15 +114,15 @@ export default function Pricing() {
             <tbody>
               <tr>
                 <td>{getTranslation("addOnRush", lang)}</td>
-                <td>{currency === "CZK" ? "+2 500 Kč" : "+€100"}</td>
+                <td>{currency === "CZK" ? "+4 000 Kč" : "+€160"}</td>
               </tr>
               <tr>
                 <td>{getTranslation("addOnRevision", lang)}</td>
-                <td>{currency === "CZK" ? "+1 200 Kč" : "+€48"}</td>
+                <td>{currency === "CZK" ? "+2 000 Kč" : "+€80"}</td>
               </tr>
               <tr>
                 <td>{getTranslation("addOnSocial", lang)}</td>
-                <td>{currency === "CZK" ? "+1 800 Kč" : "+€72"}</td>
+                <td>{currency === "CZK" ? "+3 000 Kč" : "+€120"}</td>
               </tr>
               <tr>
                 <td>{getTranslation("addOnTravel", lang)}</td>
